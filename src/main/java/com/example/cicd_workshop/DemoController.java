@@ -13,8 +13,14 @@ public class DemoController {
 
 
 
+
     @GetMapping("")
     ResponseEntity<String> get(){
         return new ResponseEntity<>("App deployed!", HttpStatus.OK);
+    }
+
+    @GetMapping("/update")
+    ResponseEntity<String> update(){
+        return new ResponseEntity<>("App deployed with update!", HttpStatus.OK);
     }
 }
